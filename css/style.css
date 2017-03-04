@@ -129,69 +129,19 @@ h4 {
 	text-transform: uppercase;
 }
 
-.container {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-}
 
-.container img {
-	display: flex;
-	justify-content: center;
-	top: 50vh;
-	align-items: center;
-	margin: 40px;
-	transform: scale(0.8);
-	-webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
-	box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.35);
-}
-
-.img-content {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 50px;
-}
-
-.img-content img ~ span {
-	position: absolute;
-	top: 30%;
-	left: 38%;
-	color: white;
-}
-
-.img-content p {
-	padding-bottom: 30px;
-	border-bottom: 2px solid black;
-	letter-spacing: 3px;
-}
-
-.img-content h1 {
-	padding-top: 20px;
-	font-size: 1em;
-	font-weight: 100;
-	width: 25%;
-	letter-spacing: 1px;
-	overflow: hidden;
-	text-indent: 15px
-}
 
 .container-2 {
 	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	min-height: 600px;
-	outline: 2px solid red;
+	height: 30vh;
 	background: #1b1717;
 	color: white;
 }
 
-.container-2 p:nth-child(2)  {
+.container-2 p:nth-child(2) {
 	font-size: 2em;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
@@ -199,27 +149,115 @@ h4 {
 }
 
 .container-2 p:first-child {
-	margin-top: 40px;
+	margin-top: 80px;
 	font-size: 1em;
 	letter-spacing: 6px;
-	
-	
 }
 
 .container-2 h1 {
 	font-size: 1em;
 	font-weight: 200;
-	letter-spacing:1px;
+	letter-spacing: 1px;
+}
+
+.half-of-container
+{
+    display:flex;
+    height:50%;
+    width:100%;
+  
+    
 }
 
 .container-3 {
-	background-attachment: fixed;
-	background-image: url("../img/3content.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 100vh;
-	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 70vh;
 }
-.container-2 img{
-	padding-top: 50px;
+
+.base1,
+.base2,
+.base3,
+.base4,
+.base5,
+.base6 {
+	display: flex;
+	flex-basis: 33%;
+	overflow: hidden;
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+
+.foto1 {
+	display: flex;
+	background-image: url('../img/1.jpg');
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: transform 0.5s;
+}
+
+.foto2 {
+	display: flex;
+	background-image: url('../img/2.jpeg');
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: transform 0.5s
+}
+
+.foto3 {
+	display: flex;
+	background-image: url('../img/3.jpeg');
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: transform 0.5s
+}
+
+.foto4 {
+	display: flex;
+	background-image: url('../img/4.jpeg');
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: transform 0.5s
+}
+
+.foto5 {
+	display: flex;
+	background-image: url('../img/5.jpg');
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: transform 0.5s
+}
+
+.foto6 {
+	display: flex;
+	background-image: url('../img/6.jpg');
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: transform 0.5s
+}
+
+
+
+.page-footer {
+	min-height: 400px;
+	background: #302b2b;
+}
+
+.base1:hover .foto1, .base2:hover .foto2, .base3:hover .foto3, .base4:hover .foto4, .base5:hover .foto5, .base6:hover .foto6{
+	
+	transform: scale(1.5);
+	transition: transform 0.5s ease;
 }
